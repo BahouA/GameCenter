@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/item1"
+        android:title= "Home"
+        android:icon="@drawable/ic_back_home"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/item2"
+        android:title="Difficulty"
+        app:showAsAction="never"/>
+    <item android:id="@+id/item3"
+        android:title="Platform"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/subitem1"
+                android:title="PC"
+                app:showAsAction="never"/>
+            <item android:id="@+id/subitem2"
+                android:title="Console"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+
+</menu>
